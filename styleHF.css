@@ -1,0 +1,68 @@
+header{
+    height:90px;
+    background:transparent;
+}
+.logoHead{
+    display: inline-block;
+    margin:15px;
+}
+.topnav {
+    overflow: hidden;
+    background: transparent;
+    float: right;
+    width:40%;
+  }
+  
+.topnav a {
+    float: right;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top:20px;
+    margin-left:20px;
+    position: relative;
+    right:40px;
+}
+  
+.topnav a:hover {
+    color:rgb(53, 38, 11);
+}
+
+.topnav input{
+    border-radius: 15px;
+    border: none;
+    position: absolute;
+    right:10px;
+    margin-top:55px;
+    font-size: 17px;
+    width:360px;
+    height:25px;
+}
+
+.topnav input:focus{
+    outline: none;
+    border: none;
+}
+
+.topnav button{
+    float:right;
+    position: relative;
+    margin-top:3%;
+    right:3%;
+    width: 80px;
+    height:30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(62, 49, 36);
+    font-weight: bold;
+}
+
+.topnav button:hover{
+    background-color: rgb(54, 36, 27);
+    color: white;
+    cursor: pointer;
+}

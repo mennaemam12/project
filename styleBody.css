@@ -1,0 +1,164 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+.bgVisit{
+    background-image: url(egypt1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    width:100%;
+    position: absolute;
+}
+.slogan{
+    width:50%;
+    height:50%;
+    position: relative;
+    top:20%;
+    left:25%;
+    color:white;
+}
+.slogan p{
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.slogan h2{
+    font-size: 45px;
+    text-align: center;
+    line-height: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.slogan ul{
+    list-style-type: none;
+    display: inline-block;
+    line-height: 0;
+}
+.slogan ul li{
+    margin-right:10px;
+    display: inline;
+}
+.slogan input{
+    background-color: #ffffff;
+    position: relative;
+    left:30%;
+    font-family: "Roboto Mono",monospace;
+    color: #000000;
+    font-size: 18px;
+    width:200px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.buttons button{
+  border-radius: 8px;
+  border:none;
+  width:200px;
+  height:60px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-right:90px;
+  background:transparent;
+  color:rgb(255, 255, 255);
+}
+.buttons button:focus{
+    background-color: white;
+    color:black;
+    
+}
+.buttons button:hover{
+    cursor: pointer;
+}
+.buttons{
+    margin-top:9%;
+    margin-bottom:5px;
+    margin-left:15%;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    width: 400px;
+    left: 46%;
+    margin-left: -150px;
+    height: 515px;
+    top: 30%;
+    margin-top: -100px;
+    z-index: 20;
+    border-radius: 90px;
+    padding:10px;
+}
+
+
+#popup:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -2;
+}
+
+#popup:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FFF;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+    padding:10px;
+}
+
+form input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: rgb(54, 36, 27);
+    color: white;
+    padding: 14px 20px;
+    margin-left:20%;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 16px;
+}
+.message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 15px;
+    padding:10px;
+    text-align: center;
+}
+
+.message a {
+    color: rgb(54, 36, 27);
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleHF.css">
+    <link rel="stylesheet" href="styleBody.css">
+    <script>
+        
+        $ = function(id) {
+            return document.getElementById(id);
+        }
+
+        var show = function(id) {
+	        $(id).style.display ='block';
+        }
+        var hide = function(id) {
+	        $(id).style.display ='none';
+        }
+
+    </script>
+    
+</head>
+<body>
+   
+    <div class="bgVisit">
+        <header>
+            <div class="logoHead">
+                <img src="logo.png" alt="logo" width="100px">
+            </div>
+            <div class="topnav">
+                <button class="button" href="#" onclick="show('popup')">Sign In</button>
+                <a href="about.html"> <img src="icons8-about-64.png" width="20px" alt="about" > About</a>
+                <a href="trips.html"> <img src="icons8-favorite-64.png" alt="heart" width="20px"> Trips</a>
+                <a href="cart.html"> <img src="icons8-shopping-cart-64 (1).png" alt="" width="20px"> Cart</a>
+                <a href="home.html"> <img src="icons8-home-64.png" alt="" width="20px"> Home</a>
+                <input type="search" placeholder=" Search.." > 
+              </div>
+            
+        </header>
+        
+        <div class="slogan">
+            <h2>Vist Egypt</h2>
+            <p>Land of the Sphinx, call us your guide.</p>
+            <ul>
+                <li><input type="date" onfocus="(this.type='date')"></li>
+                <li><input type="search" placeholder="Where?"></li>
+            </ul>  
+        </div>
+
+
+        <div class="buttons">
+            <button> <img src="icons8-5-star-hotel-64.png" alt="" width="30px;"> Hotels</button>
+            <button> <img src="icons8-running-64.png" alt="" width="30px;"> Activities</button>
+            <button> <img src="icons8-cutlery-64.png" alt="" width="30px;"> Food</button>
+            <button class="rightButton"> <img src="icons8-world-map-64.png" alt="" width="30px;"> Tours</button>
+            </ul>
+        </div>
+        
+        <div class="sections">content</div>
+    
+    </div>
+
+    <div class="popup" id="popup">
+        <form action="action_page.php" method="post">
+            <div class="imgcontainer">
+                <img src="avatar.png" alt="Avatar" class="avatar" width="100px" style="margin-left:37% ;margin-top:5%">
+              </div>
+            <div class="container">
+              <label for="uname"><b style="color:rgb(54, 36, 27); font-size: 17px; font-family: Arial, Helvetica, sans-serif;">Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b style="color:rgb(54, 36, 27); font-size: 17px; font-family: Arial, Helvetica, sans-serif;">Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+              
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button onclick="hide('popup')" type="button">Close</button>
+            </div>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+          </form>
+      </div>
+    
+
+    
+    
+
+    
+    
+</body>
+</html>
