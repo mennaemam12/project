@@ -7,39 +7,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="styleHF.css">
     <link rel="stylesheet" href="styleBody.css">
-    <script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
         
-        $ = function(id) {
-            return document.getElementById(id);
-        }
+    </style>
+    <script>
+         //view sign in form onclick signin button
+    $ = function(id) {
+        return document.getElementById(id);
+    }
 
-        var show = function(id) {
-	        $(id).style.display ='block';
-        }
-        var hide = function(id) {
-	        $(id).style.display ='none';
-        }
-
+    var show = function(id) {
+        $(id).style.display ='block';
+    }
+    var hide = function(id) {
+        $(id).style.display ='none';
+    }
     </script>
     
 </head>
 <body>
-   
+   <script src="https://kit.fontawesome.com/ee4053c9b9.js" crossorigin="anonymous"></script>
     <div class="bgVisit">
-        <header>
+        <header class="myHeader" id="myHeader">
             <div class="logoHead">
                 <img src="logo.png" alt="logo" width="100px">
             </div>
             <div class="topnav">
-                <button class="button" href="#" onclick="show('popup')">Sign In</button>
-                <a href="about.html"> <img src="icons8-about-64.png" width="20px" alt="about" > About</a>
-                <a href="trips.html"> <img src="icons8-favorite-64.png" alt="heart" width="20px"> Trips</a>
-                <a href="cart.html"> <img src="icons8-shopping-cart-64 (1).png" alt="" width="20px"> Cart</a>
-                <a href="home.html"> <img src="icons8-home-64.png" alt="" width="20px"> Home</a>
-                <input type="search" placeholder=" Search.." > 
+                <button class="button" onclick="show('popup')">Sign In</button>
+                <a href="about.html"> <i class="fa-sharp fa-solid fa-circle-info"></i> </a>
+                <a href="trips.html"> <i class="fa-regular fa-heart"></i> </a>
+                <a href="cart.html"> 
+ 
+ 
+                    <i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="homepage.html"> <i class="fa-solid fa-house fa-fw"></i> </a>
+                <input type="search" placeholder=" Search.."> 
               </div>
             
-        </header>
+            </header>
         
         <div class="slogan">
             <h2>Vist Egypt</h2>
@@ -52,19 +58,18 @@
 
 
         <div class="buttons">
-            <button> <img src="icons8-5-star-hotel-64.png" alt="" width="30px;"> Hotels</button>
-            <button> <img src="icons8-running-64.png" alt="" width="30px;"> Activities</button>
-            <button> <img src="icons8-cutlery-64.png" alt="" width="30px;"> Food</button>
-            <button class="rightButton"> <img src="icons8-world-map-64.png" alt="" width="30px;"> Tours</button>
-            </ul>
+            <button> <i class="fa fa-thumbs-up"></i> Hotels</button>
+            <button> <i class="fa-solid fa-person-running"></i>Activities</button>
+            <button> <i class="fa-solid fa-utensils"></i> Food</button>
+            <button> <i class="fa-solid fa-map"></i> Tours</button>
         </div>
         
-        <div class="sections">content</div>
+        
     
     </div>
 
     <div class="popup" id="popup">
-        <form action="action_page.php" method="post">
+        <form action="" method="post">
             <div class="imgcontainer">
                 <img src="avatar.png" alt="Avatar" class="avatar" width="100px" style="margin-left:37% ;margin-top:5%">
               </div>
@@ -86,11 +91,41 @@
           </form>
       </div>
     
+     
+    <div class="rubbish">
+        <h2>bye</h2>
+    </div>
+    
 
     
-    
-
-    
-    
+    <script> src="homepageJS.js"</script>
 </body>
+<script>
+    
+    //view sign in form onclick signin button
+    $ = function(id) {
+        return document.getElementById(id);
+    }
+
+    var show = function(id) {
+        $(id).style.display ='block';
+    }
+    var hide = function(id) {
+        $(id).style.display ='none';
+    }
+
+    //change header on scroll
+    let header = document.getElementById("myHeader")
+    window.onscroll = function(){
+        if(window.pageYOffset > 15){
+            header.classList.add('sticky');
+        }
+        else{
+            header.classList.remove('sticky');
+        }
+    }
+
+
+
+</script>
 </html>
