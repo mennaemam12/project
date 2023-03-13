@@ -85,7 +85,8 @@ body{
     
 }
 
-.popup {
+
+.signin, .signup {
     display: none;
     position: fixed;
     width: 400px;
@@ -98,7 +99,7 @@ body{
     border-radius: 90px;
     padding:10px;
 }
-#popup:after {
+#signin:after, #signup:after {
     position: fixed;
     content: "";
     top: 0;
@@ -108,7 +109,7 @@ body{
     background-color: rgba(0,0,0,0.5);
     z-index: -2;
 }
-#popup:before {
+#signin:before, #signup:before {
     position: absolute;
     content: "";
     top: 0;
@@ -120,12 +121,13 @@ body{
     z-index: -1;
 }
 
+
 form {
     border: 3px solid #f1f1f1;
     border-radius: 10px;
     padding:10px;
 }
-form input[type=text], input[type=password] {
+form input[type=text], input[type=password], input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -144,22 +146,46 @@ form button {
     width: 60%;
     border-radius: 10px;
 }
+.divclose, .divclose2{
+    width:50px;
+    height:20px;
+}
+.divclose2 .close{
+    width:20px;
+    height:10px;
+}
+.close{
+    height:25px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
 
 .container {
-    padding: 16px;
+    padding: 10px;
+}
+.container label{
+    color:rgb(54, 36, 27);
+    font-size: 17px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-.message {
-    margin: 15px 0 0;
+.signuptitle h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.message{
     color: #b3b3b3;
     font-size: 15px;
-    padding:10px;
     text-align: center;
 }
-
 .message a {
     color: rgb(54, 36, 27);
 }
+
 
 .rubbish{
     height:1000px;

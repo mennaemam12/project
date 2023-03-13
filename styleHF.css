@@ -5,7 +5,7 @@
 }
 .logoHead{
     display: inline-block;
-    margin:15px;
+    margin:13px;
 }
 .topnav {
     overflow: hidden;
@@ -72,6 +72,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    height:70px;
     background-color: rgb(54, 36, 27);
     z-index: 1000;
     transition: 0.5s;
@@ -85,7 +86,15 @@
     color:rgb(177, 165, 109);
 }
 
+.sticky .topnav{
+    margin-top:0.5%;
+}
+
 .sticky button:hover{
     background-color:rgb(177, 165, 109);
+    color:rgb(54, 36, 27);
+}
+.sticky input[type=search]{
+    display:none;
 }
 
