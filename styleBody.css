@@ -187,8 +187,30 @@ form button {
 }
 
 
-.rubbish{
-    height:1000px;
-    background-color: red;
+.why choose us{
+    height:500px;
+    background-color:white;
+    padding:6px;
+    margin:6px;
+    vertical-align:auto;
     
+}
+.head{
+    position:relative;
+    left:695px;
+}
+.first{
+    width:202px;
+}
+.all,.first{
+    display:inline-block;
+    text-align:center;
+    padding:5px;
+}
+.all{
+    position:relative;
+    left:345px;
+}
+.rubbish{
+    height:200px;
 }
