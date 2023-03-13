@@ -113,10 +113,7 @@ footer{
     right:0;
     background-color: #36241b;
     height: 350px;
-    padding: 30px;
-}
-.info{
-    
+    padding-top: 40px;;
 }
 .titles,li,a{
     color:white;
@@ -131,12 +128,13 @@ li{
 }
 .icons{
     position:relative;
-    right:11%;
+    right:13%;
     top:20%;
    
 }
 .info{
     height:100px;
+    position: relative;
 }
 #copyright{
     font-size: 12px;
@@ -145,7 +143,7 @@ li{
 #cright{
     display: flex;
     position:relative;
-    left:845px;
+    left:815px;
     top:40px;
 }
 #rightimg{
