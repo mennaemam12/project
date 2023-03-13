@@ -128,13 +128,14 @@ li{
 }
 .icons{
     position:relative;
-    right:13%;
+    right:11%;
     top:20%;
    
 }
 .info{
     height:100px;
     position: relative;
+    left:35px;
 }
 #copyright{
     font-size: 12px;
@@ -143,7 +144,7 @@ li{
 #cright{
     display: flex;
     position:relative;
-    left:815px;
+    left:845px;
     top:40px;
 }
 #rightimg{
