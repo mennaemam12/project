@@ -10,7 +10,7 @@ function hide(id){
 let header = document.getElementById("myHeader")
 let logo = document.getElementById("logo");
 window.onscroll = function(){
-    if(window.pageYOffset > 15){
+    if(window.pageYOffset > 100){
         header.classList.add('sticky');
         logo.style.width = "60px";
     }

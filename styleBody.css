@@ -13,11 +13,11 @@ body{
     width:100%;
 }
 .slogan{
-    position: relative;
+    position: absolute;
     width:50%;
     height:50%;
-    top:20%;
-    left:26%;
+    top:25%;
+    left:25%;
     color:white;
 }
 .slogan p{
@@ -55,10 +55,9 @@ body{
 }
 
 .buttons{
-    margin-top:9%;
-    margin-bottom:5px;
-    margin-left:15%;
-    position: relative;
+    top:60%;
+    left:14%;
+    position: absolute;
     display: inline-block;
     
 }
@@ -196,15 +195,15 @@ form button {
 
 
 .why-choose-us{
-    height:500px;
+    height:250px;
     background-color:rgb(54, 36, 27);
-    padding:6px;
-    vertical-align:auto;
+    padding:10px;
+    vertical-align:middle;
     color:white;
 }
 .head{
     position:relative;
-    left:690px;
+    left:665px;
 }
 .first{
     width:202px;
@@ -216,5 +215,5 @@ form button {
 }
 .all{
     position:relative;
-    left:345px;
+    left:22%;
 }

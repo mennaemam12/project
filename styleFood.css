@@ -46,11 +46,11 @@ img:hover{
    bottom: 87%;
 }
 .like-button:hover{
-   color: red;
+   color: rgb(193, 40, 40);
 }
   
-  .photo {
-     position: relative;
-     width: 100%;
-     max-width: 400px;
-  }
+.photo {
+   position: relative;
+   width: 100%;
+   max-width: 400px;
+}
