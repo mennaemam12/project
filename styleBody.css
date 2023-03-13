@@ -54,6 +54,14 @@ body{
     border-radius: 5px;
 }
 
+.buttons{
+    margin-top:9%;
+    margin-bottom:5px;
+    margin-left:15%;
+    position: relative;
+    display: inline-block;
+    
+}
 .buttons button{
   border-radius: 8px;
   border:none;
@@ -66,24 +74,23 @@ body{
   color:rgb(54, 36, 27);
   text-align: center;
 }
+.buttons a{
+    text-decoration: none;
+    color:black;
+}
 .buttons button:focus{
     background-color: rgb(54,36,27);
     color:rgb(255, 255, 255);
     
 }
-.buttons button:hover{
+
+.buttons button:hover, a:hover{
     cursor: pointer;
     background-color: rgb(54,36,27);
     color:rgb(255, 255, 255);
 }
-.buttons{
-    margin-top:9%;
-    margin-bottom:5px;
-    margin-left:15%;
-    position: relative;
-    display: inline-block;
-    
-}
+
+
 
 
 .signin, .signup {
@@ -146,6 +153,7 @@ form button {
     width: 60%;
     border-radius: 10px;
 }
+
 .divclose, .divclose2{
     width:50px;
     height:20px;
@@ -187,17 +195,16 @@ form button {
 }
 
 
-.why choose us{
+.why-choose-us{
     height:500px;
-    background-color:white;
+    background-color:rgb(54, 36, 27);
     padding:6px;
-    margin:6px;
     vertical-align:auto;
-    
+    color:white;
 }
 .head{
     position:relative;
-    left:695px;
+    left:690px;
 }
 .first{
     width:202px;
@@ -210,7 +217,4 @@ form button {
 .all{
     position:relative;
     left:345px;
-}
-.rubbish{
-    height:200px;
 }
