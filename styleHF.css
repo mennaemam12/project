@@ -38,7 +38,8 @@ body{
     right:40px;
 }
 .topnav a:hover {
-    color:rgb(53, 38, 11);
+    color:rgb(177, 165, 109);
+    background-color: transparent;
 }
 .topnav input{
     border-radius: 15px;
@@ -73,9 +74,6 @@ body{
     cursor: pointer;
 }
 
-
-
-
 .sticky {
     position: fixed;
     top: 0;
@@ -106,18 +104,15 @@ body{
     display:none;
 }
 
-
-
-
 footer{
     position:absolute;
     top:170%;
-    bottom: -100px;;
+    bottom:0%;
     left: 0;
     right:0;
     background-color: #36241b;
-    height: 300px;
-    padding-top: 40px;;
+    height: 340px;
+    padding-top: 40px;
 }
 .line{
     display:inline-block;

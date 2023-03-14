@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+    <link rel="stylesheet" href="styleHF.css">
+    <link rel="stylesheet" href="styleBody.css">
+    <link rel="stylesheet" href="styleHotels.css">
+    <link rel="stylesheet" href="styleHFOtherPages">
+    <link rel="script" href="homepageJS.js">
+
+     
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/ee4053c9b9.js" crossorigin="anonymous"></script>
+    
+    <div class="bgVisit">
+        <header class="myHeader" id="myHeader">
+            <div class="logoHead">
+                <img id="logo" src="homepage\logo.png" alt="logo" width="100px">
+            </div>
+            <div class="topnav">
+                <button onclick="show('signin')">Sign In</button>
+                <a href="about.html"> <i class="fa-sharp fa-solid fa-circle-info"></i> </a>
+                <a href="trips.html"> <i class="fa-regular fa-heart"></i> </a>
+                <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="homepage.html"> <i class="fa-solid fa-house fa-fw"></i> </a>
+                <input type="search" placeholder=" Search.."> 
+              </div>
+            </header>
+        
+        <div class="buttons">
+            <button> <i class="fa fa-thumbs-up"></i> Hotels</button>
+            <button onclick="location.href='activities.html';"> <i class="fa-solid fa-person-running"></i>Activities</button>
+            <button onclick="location.href='food.html';"> <i class="fa-solid fa-utensils"></i> Food</button>
+            <button> <i class="fa-solid fa-map"></i> Tours</button>
+        </div>
+    </div>
+        
+    <div class="signin" id="signin">
+        <form action="" method="post">
+          <div class="divclose">
+            <button class="close" onclick="hide('signin')"><i class="fa fa-close"></i></button>
+          </div>
+            <div class="imgcontainer">
+                <img src="homepage\avatar.png" alt="Avatar" class="avatar" width="100px" style="margin-left:37% ;margin-top:5%">
+              </div>
+            <div class="container">
+              <label for="uname">Username</label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw">Password</label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <p class="message">Not Registered?</p>
+              <button onclick="show('signup'); onclick=hide('signin')" type="button">Sign up</button>
+            </div>
+                
+          </form>
+    </div>
+    <script src="homepageJS.js" type="text/javascript" ></script>
+
+      <div class="signup" id="signup">
+        <form action="" method="post">
+          <div class="divclose2">
+            <button onclick="hide('signup'); onclick=hide('signin')"><i class="fa fa-close"></i></button>
+          </div>
+            <div class="signuptitle">
+                <h2>Sign Up To <br> EgyTours!</h2>
+              </div>
+            <div class="container">
+              <label for="fname">First Name</label>
+              <input type="text" placeholder="Enter First Name" name="name" required>
+
+              <label for="lname">Last Name</label>
+              <input type="text" placeholder="Enter Last Name" name="lname" required>
+
+              <label for="email">Email</label>
+              <input type="email" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw">Password</label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Sign up</button>
+            </div>
+          </form>
+      </div>
+
+    <div id="parent">
+        <h1>Explore Hotels</h1>
+        <div class="hotels">
+            <button class="btn">
+                <div class="cols" class="dimg">
+                    <img src="Hotels\jaz hotel.jpeg" alt="Jaz Aquamarine Hotel"  class="image">
+                </div>
+                <div class="cols" id="txt1">
+                    <h2 class="h2hotels">Jaz Aquamarine Resort</h2>
+                    <div class="rating" class="rev">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <div class="rev">
+                            <p>14,010 reviews</p>
+                        </div>  
+                    </div>
+                    <p>South Sahl Hashish Road,Hurghada, Red Sea and Sinai, Egypt</p>
+                    <div class="comment">
+                        <div class="com">
+                            <i class="fa-solid fa-comment"></i>
+                       </div>
+                       <div class="com">
+                             <p>1,324 mentions of egypt</p>
+                      </div>
+                    </div>
+                    <p class="quote">"...Think you know everything about Egypt,think again..."</p>
+                </div>
+            </button>
+
+            <button class="btn">
+                <div class="cols1" class="dimg" >
+                    <img src="Hotels\hilton luxor hotel.jpeg" alt="Hilton Luxor Hotel" class="image" id="hilton">
+                </div>
+                <div class="cols1" id="txt2">
+                    <h2 class="h2hotels">Hilton Luxor Hotel & Spa</h2>
+                    <div class="rating" class="rev" style="position: relative; right:100px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <div class="rev">
+                            <p>2,991 reviews</p>
+                        </div>  
+                    </div>
+                    <p style="position: relative; right:70px;">New Karnak, Luxor, Nile River Valley, Egypt</p>
+                    <div class="comment" style="position: relative; right:120px;">
+                        <div class="com">
+                            <i class="fa-solid fa-comment"></i>
+                       </div>
+                       <div class="com">
+                             <p>532 mentions of egypt</p>
+                       </div>
+                    </div>
+                    <p id="q2">"...We know many hotels in Egypt, because we live and work here in this wonderful..."</p>
+                </div>
+            </button>
+
+            
+            <button class="btn">
+                <div class="cols1" class="dimg" >
+                    <img src="Hotels\fourseasons alex.jpg" alt="Four Seasons Hotel Alexandria" class="image" id="fs">
+                </div>
+                <div class="cols1" id="txt3">
+                    <h2 class="h2hotels">Four Seasons Hotel Alexandria</h2>
+                    <div class="rating" class="rev" style="position: relative; right:135px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <div class="rev">
+                            <p>991 reviews</p>
+                        </div>  
+                    </div>
+                    <p style="position: relative; right:75px;">399 El Geish Road, Alexandria Governorate, Egypt</p>
+                    <div class="comment" style="position: relative; right:135px;">
+                        <div class="com">
+                            <i class="fa-solid fa-comment"></i>
+                       </div>
+                       <div class="com">
+                             <p >5 mentions of four seasons</p>
+                       </div>
+                    </div>
+                    <p id="q3">"...The sea view is great in for seasons beach. We will come back..."</p>
+                </div>
+            </button>
+
+            <button class="btn">
+                <div class="cols1" class="dimg" >
+                    <img src="Hotels\tonaroz siwa.jpg" alt="Toranoz Siwa Hotel" class="image" id="siwa">
+                </div>
+                <div class="cols1" id="txt4">
+                    <h2 class="h2hotels">Siwa Tonaroz Hotel</h2>
+                    <div class="rating" class="rev" style="position: relative; right:85px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <div class="rev">
+                            <p>50 reviews</p>
+                        </div>  
+                    </div>
+                    <p style="position: relative; right:28px;">Almaraqi Road, Siwa, Matrouh Governate, Egypt</p>
+                    <div class="comment" style="position: relative; right:100px;">
+                        <div class="com">
+                            <i class="fa-solid fa-comment"></i>
+                       </div>
+                       <div class="com">
+                             <p >10 mentions of siwa</p>
+                       </div>
+                    </div>
+                    <p id="q4">"...Really we go to siwa oasis every year, but this time when it's our first..."</p>
+                </div>
+            </button>
+        </div>       
+    </div>
+    <footer>
+        <div class="info">
+            <div id="about" class="line">
+                <h2 class="titles">ABOUT</h2>                     
+                <ul>
+                    <li><a class="lia" href="">ABOUT US</a></li>
+                    <li><a class="lia" href="">TEAM</a></li>  
+                    <li><a class="lia" href="">TERMS & CONDITIONS</a></li>
+                    <li><a class="lia" href="">PRIVACY & COOKIES</a></li>  
+
+                </ul> 
+            </div>
+            <div id="contact" class="line">
+                    <h2 class="titles">CONTACT US</h2>                     
+                    <ul>
+                        <li>(+20)1095679442</li>
+                        <li>(+20)1096831229</li>
+                        <li>egytours@gmail.com</li>   
+                    </ul> 
+            </div>  
+            <div id="tips" class="line">
+                <h2 class="titles">TRAVEL TIPS</h2>                     
+                <ul>
+                    <li><a class="lia"  href="">START HERE</a></li>
+                    <li><a class="lia"  href="">BLOGS</a></li>  
+                    <li><a class="lia"  href="">DESTINATIONS</a></li>  
+
+                </ul> 
+            </div>  
+            <div id="email" class="line" >
+                <input type="email" placeholder="Enter your email" id="tmail">
+                <button type ="submit" id="subscribe">Subscribe Now!</button>
+            </div>
+      </div>
+      <div id="icons" class="line">
+            <i class="fa-brands fa-facebook"></i> 
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-regular fa-envelope"></i>
+      </div>
+      <div id="cright" class="line">
+        <div id="cicon" class="line">
+            <i class="fa-regular fa-copyright" ></i>
+        </div>
+        <h6 id="copyright">2023 EgyTours All Rights Reserved</h6>
+      </div>
+    </footer>
+</body>
+</html>
