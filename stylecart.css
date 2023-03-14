@@ -1,0 +1,78 @@
+img{
+    width: 100px;
+}
+h3{
+    position: relative;
+    left: 110px;
+    bottom: 100px;
+}
+p{  
+    position: relative;
+    left: 140px;
+    bottom: 140px;
+}
+.icons{
+    width: 20px;
+    position: relative;
+    left: 110px;
+    bottom: 100px;
+}
+.zeft{
+    margin-bottom: -40px;
+}
+#check{
+    border: 3px solid lightblue; 
+}
+#text1{
+    position: relative;
+    left: 700px;
+    bottom: 355px;
+}
+#text2{
+    position: relative;
+    left: 900px;
+    bottom: 387px;
+}
+#text3{
+    position: relative;
+    left: 900px;
+    bottom: 387px;
+    color: green;
+}
+.trash{
+    width: 20px;
+    position: relative;
+    left: 500px;
+    bottom: 310px;
+}
+hr{
+    position: relative;
+    bottom: 220px;
+}
+
+button{
+    position: relative;
+    left: 890px;
+    bottom: 387px;
+    color: rgb(54, 36, 27);
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+}
+button:hover {
+    background: rgb(54, 36, 27);
+    color: white;
+}
+.rate{
+    position: relative;
+    left: 112px;
+}
+.stars{
+    position: relative;
+    left: 140px;
+    bottom: 100px;
+    width: 20px;
+}
+.trash:hover{
+    transform: scale(1.1);
+}

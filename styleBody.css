@@ -16,7 +16,7 @@ body{
     position: absolute;
     width:50%;
     height:50%;
-    top:25%;
+    top:20%;
     left:25%;
     color:white;
 }
@@ -55,7 +55,7 @@ body{
 }
 
 .buttons{
-    top:60%;
+    top:40%;
     left:14%;
     position: absolute;
     display: inline-block;
@@ -200,6 +200,7 @@ form button {
     padding:10px;
     vertical-align:middle;
     color:white;
+
 }
 .head{
     position:relative;
